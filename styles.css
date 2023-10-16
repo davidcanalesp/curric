@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body{
+    font-size: 16px;
+}
+
+.flex_container{
+    display: flex;
+    width:80%;
+}
+
+.col_izq{
+    background-color: rgb(220,20,60);
+    outline-offset: -1rem;
+    outline-color: rgb(210, 180, 222);
+    outline-style: double;
+    outline-width: 1px;
+    color:whitesmoke;
+    padding: 1rem;
+    width: 35%;
+    height: 100vh;
+}
+
+.col_izq_encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large; 
+}
+
+.mi_foto{
+    margin-top: 1rem;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.col_izq_encabezado p{
+    font-size: medium;
+}
+
+.datos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color:whitesmoke;
+    margin-bottom: 2rem;
+}
+
+.Titulo_sm{
+    display: none;
+}
+ .cedula_sm{
+    display: none;
+ }
+
+ #nombre{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight:bolder;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+ }
+
+ .logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: .4rem;
+    height:45vh;
+}
+
+.logos_icono{
+    width: 2.5rem;
+    min-width: 1.5rem;
+    border-radius: 50%;
+}
+
+.col_der{
+    color: red;
+    width: 50%;
+}
+.whats{
+    display: flex;
+    justify-content:start;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    margin-left: .5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.whats_sm{
+    display: none;
+}
+
+.email{
+    display:flex;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    margin-bottom: 2rem;
+}
+
+.email_sm{
+    display: none;
+}
+.fa-envelope{
+    margin-right: 0;
+}
+.email_data{
+    margin-left:0;
+}
+
+
+/********************  Panel Derecho */
+.col_der{
+    background-color:turquoise;
+    width: 65%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.col_der-div{
+    width: 100%;
+    height: 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    padding: 1rem;
+}
+
+
+h4{
+    text-align: center;
+}
+
+.descripcion_parrafo{
+    margin-bottom: 0.5rem;
+}
+
+.col_der-parrafo{
+    margin-bottom: .3rem;
+    text-align: center;
+}
+
+.descripcion{
+    padding: 3rem;
+}
+
+.portada{
+    width: 90%;
+}
+
+.techstack{
+    margin: 0;
+    list-style: none;
+    margin-bottom: .5rem;
+}
+
+.techstack_item{
+    margin-left: 1rem;
+}
+
+.col_der-div:first-child{
+    background-color: RGB(210, 180, 222);
+}
+
+.col_der-div:nth-child(2){
+    background-color: blanchedalmond;
+}
+
+.col_der-div:nth-child(3){
+    background-color:Turquoise ;
+}
+
+.col_der-div:nth-child(4){
+    background-color: RGB(237, 187, 153);
+}
+
+.col_der-div:nth-child(5){
+    background-color: RGB(174, 214, 241);
+}
+
+.sm-on{
+    display: none;
+}
+/********************************************************************/
+
+@media (max-width: 920px) {
+    body{
+        font-size: 14px;
+
+    }
+    .email_data{
+        font-size: .8rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 0;
+    }
+
+
+
+}
+
+@media (max-width: 850px) {
+    .Titulo{
+        display: none;
+     }
+     .cedula{
+        display: none;
+     }
+
+     .whats{
+        display: none;
+     }
+
+     .email{
+        display: none;
+     }
+
+     .whats_sm{
+        display: block;
+        font-size: 1.3rem;
+        margin: auto;
+        text-align: center;
+        margin-bottom: .4rem;
+     }
+
+     .email_sm{
+        display: block;
+        font-size: 1.3rem;
+        margin: auto;
+        text-align: center;
+        margin-bottom: .4rem;
+     }
+
+     .Titulo_sm{
+        display: block;
+        margin: auto;
+    }
+     .cedula_sm{
+        display: block;
+        margin: auto;
+     }
+
+
+    .fa-envelope{
+            display:none;
+        }
+    .email_data{
+            font-size: .9rem;
+        }
+    .fa-whatsapp{
+        font-size: .7rem;
+        height: 0;
+    }
+
+    whats_sm{
+        display: none;
+    }
+
+    .datos{
+        font-size: .5rem;
+    }
+    #nombre{
+        font-size: 1rem;
+    }
+
+    .col_der-div{
+        grid-template-columns: 1fr;
+
+    }
+
+    .col_der-div{
+        padding: .5rem;
+    }
+
+    .md-on{
+        display: none;
+    }
+    .sm-on{
+        display: block;
+        margin: .5rem;
+    }
+
+}
+
+@media (max-width: 740px){
+    #nombre{
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    text-align:center;
+}
+
+@media (max-width: 650px){
+    .flex_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .col_izq{
+        background-color: rgb(220,20,60);
+        outline-offset: -0.5rem;
+        width: 100%;
+        height: 35vh;
+        flex-direction: row;
+    }
+
+    .mi_foto, .logos{
+        display: none;
+    }
+
+    .col_der{
+        width: 100%;
+    }
+
+    
+}
